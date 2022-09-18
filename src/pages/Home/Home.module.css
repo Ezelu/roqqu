@@ -1,0 +1,186 @@
+.home {
+  position: relative;
+  padding: 2% 2%;
+  margin-left: 5rem;
+  margin-top: 4rem;
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 73% 25%;
+}
+
+.home .left .banner {
+  display: flex;
+  padding: 4%;
+  gap: 5%;
+  background: linear-gradient(102deg, #2733C4, #9F19D1);
+  color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.banner .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner .info span {
+  display: block;
+  margin-bottom: 4%;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.banner .info p {
+  font-size: 1rem;
+  color: #E8E9EBCC;
+}
+
+.banner .info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 4%;
+  font-weight: 400;
+}
+
+.banner .info button {
+  height: 40px;
+  font-size: 0.8rem;
+  width: 50%;
+  margin-top: 4%;
+  background: #030303;
+  border-radius: 8px;
+  color: #FFFFFF;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.banner .image_container {
+  align-self: center;
+}
+
+
+
+
+
+.left .tabs {
+  margin-top: 3%;
+}
+
+.left .tabs ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 2%;
+  border-bottom: 1px solid #91A0CE1A;
+}
+
+.left .tabs li {
+  padding-bottom: 1%;
+  color: #91A0CED8;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.8s ease;
+  font-size: 0.8rem;
+}
+
+.left .tabs li:last-child {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+
+.left .tokens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home .right {
+  background: orange;
+  color: #FFFFFF;
+  border-radius: 5px;
+  background: #080F24;
+  padding: 4%;
+}
+
+.right .balance {
+  text-align: center;
+  background: #04091C;
+  padding: 10% 6%;
+}
+
+.right .balance .title {
+  font-size: 0.6rem;
+  text-align: left;
+  margin-bottom: 3%;
+}
+
+.right .balance .coin_name {
+  background: #D17300;
+  color: white;
+  padding: 2%;
+  display: inline-block;
+  border-radius: 18px;
+  font-size: 0.8rem;
+  width: 58px;
+  margin-top: 3%;
+  font-weight: bolder;
+}
+
+.right .balance h1 {
+  font-size: 1.8rem;
+  margin-top: 3%;
+}
+
+.right .balance span {
+  display: block;
+  font-size: 0.9rem;
+  color: #1AC9A0;
+  margin-top: 3%;
+}
+
+.right .balance button {
+  height: 30px;
+  width: 50%;
+  margin-top: 3%;
+  border: 0;
+  outline: 0;
+  color: #FFFFFF;
+  background: #0165FF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+.right .activities{
+  margin-top: 8%;
+  font-family: 'Open Sans', sans-serif
+}

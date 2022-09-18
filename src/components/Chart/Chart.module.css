@@ -1,0 +1,65 @@
+
+.chart {
+  background: #080F24;
+  padding: 1%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.chart .headers ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1%;
+}
+
+.chart .headers li {
+  cursor: pointer;
+  padding: 0.5% 1%;
+  border-radius: 5px;
+  transition: 0.7s ease;
+}
+
+.chart .headers li:first-child {
+  margin-right: auto;
+}
+
+
+
+.chart .headers .action_buttons {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 2%;
+}
+
+.chart .headers .action_buttons div {
+  display: flex;
+}
+
+.chart .headers .action_buttons div:last-child {
+  justify-content: flex-end;
+}
+
+.chart .headers .action_buttons aside {
+  height: 30px;
+  outline: 0;
+  border: 0;
+  margin: 0 0.5%;
+  padding: 2%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #E4E4FA91;
+}
+
+
+
+
+.chart .chart_data {
+  padding: 2%;
+  width: 100%;
+  background: #04091C;
+  margin-top: 4%;
+}

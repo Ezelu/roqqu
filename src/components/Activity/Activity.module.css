@@ -1,0 +1,37 @@
+
+.activity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2%;
+  margin-top: 3%;
+  padding: 2%;
+  background: #04091C;
+  border-radius: 5px;
+  text-align: center;
+  height: 70px;
+  cursor: pointer;
+}
+
+.activity .details {
+  font-size: 0.8rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+
+.details .status {
+  color: #13A583;
+  text-transform: capitalize;
+}
+
+.details .amount {
+  color: #696b72cb;
+}
+
+.activity .date {
+  font-size: 0.6rem;
+  align-self: flex-start;
+  padding-top: 2%;
+}

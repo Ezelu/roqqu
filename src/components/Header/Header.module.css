@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 2%;
+  background: #080F24;
+  color: #FFFFFFD8;
+  z-index: 101;
+}
+
+.header h1 {
+  font-family: 'Avenir-black', sans-serif;
+  font-size: 1.2rem
+}
+
+.header .logo_container {
+  flex: 1;
+}
+
+.header .navigation {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 14px;
+  color: #FFFFFFD8
+}
+
+.header .icons {
+  margin-left: 5%;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header li {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer
+}
