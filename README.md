@@ -26,7 +26,7 @@
 
 Live Link: 
 
-![roqqu](https://user-images.githubusercontent.com/104224223/190915762-7b1b210d-dfcc-45b4-9956-922bc9459f43.gif)
+![ezgif-3-c3a7fd2645](https://user-images.githubusercontent.com/104224223/191729676-bdc2e3e9-595a-4002-9edf-07800bc19cf3.gif)
 ![localhost_3000_](https://user-images.githubusercontent.com/104224223/190915767-c86baae4-c714-4671-b971-9f261d3a21bc.png)
-![localhost_3000_ (1)](https://user-images.githubusercontent.com/104224223/190915771-ba3deb6e-e000-4eaa-a70e-3c8c0504d8e7.png)
+![localhost_3000_exchange](https://user-images.githubusercontent.com/104224223/191728811-1b20a73f-2ea9-4421-8039-d5adc894e9e0.png)
 
