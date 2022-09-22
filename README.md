@@ -12,12 +12,17 @@
 > 
 > Voila!, your web app is now powered up and ready!
 
+### ADDED FEATURES
+> Orderbook's data is consumed from binance's API
+>
+> CandleSticks real-time data is also streamed from binance's API using websockets
+
 ### MINOR ISSUES
 > Incomplete Icons and SVGs from the Design, Had to use other icons in replacement
 > 
 > Not responsive and mobile friendly as I was required to achieve that from the task
 > 
-> Didn't use candlestick charts as I didn't have enough data to stimulate and generate that
+> CandleSticks are not Updated in Realtime as I didn't have enough time to implement that before the deadline
 
 Live Link: 
 

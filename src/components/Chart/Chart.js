@@ -1,13 +1,12 @@
 import styles from './Chart.module.css'
 import { useState } from 'react';
-import ChartData from '../ChartData';
+import ChartData from '../ChartData/ChartData';
 import { TbChartCandle } from 'react-icons/tb';
 import { HiScale } from 'react-icons/hi';
 import { FaChartLine } from 'react-icons/fa';
 import { BsCamera, BsArrowsFullscreen } from 'react-icons/bs';
 import { AiFillSliders, AiOutlineSetting } from 'react-icons/ai';
 import { IoArrowUndoOutline, IoArrowRedoOutline } from 'react-icons/io5';
-
 
 
 

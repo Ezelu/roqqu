@@ -1,8 +1,12 @@
+import { useState, useEffect } from 'react';
 import styles from './Exchange.module.css';
 import Header from '../../components/Header/Header';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Chart from '../../components/Chart/Chart';
+import { getOrderBook } from '../../API/binanceAPI';
+import { getDecimalPart } from '../../utils/utils';
 import bitcoinIcon from '../../assets/bitcoin.svg';
+import { LinearProgress } from '@mui/material';
 import { MdKeyboardArrowDown } from 'react-icons/md'
 
 
@@ -40,45 +44,21 @@ export default function Exchange() {
     },
   ]
 
-  const orderBook_data = [
-    {
-      price: 128299.304781,
-      amount: 5.304781,
-      total: 5.304781,
-      degree: 100,
-    },
-    {
-      price: 128299.304781,
-      amount: 5.304781,
-      total: 5.304781,
-      degree: 80,
-    },
-    {
-      price: 128299.304781,
-      amount: 5.304781,
-      total: 5.304781,
-      degree: 60,
-    },
-    {
-      price: 128299.304781,
-      amount: 5.304781,
-      total: 5.304781,
-      degree: 20,
-    },
-    {
-      price: 128299.304781,
-      amount: 5.304781,
-      total: 5.304781,
-      degree: 10,
-    },
-    {
-      price: 128299.304781,
-      amount: 5.304781,
-      total: 5.304781,
-      degree: 25,
-    },
-  ]
 
+  const [asks, setAsks] = useState([]);
+  const [bids, setBids] = useState([]);
+
+
+
+  // Fetch the Order book data
+  useEffect(() => {
+    const data = getOrderBook(5)
+      .then(res => {
+        setAsks(res.asks);
+        setBids(res.bids);
+      })
+      .catch(err => console.log(err))
+  }, [])
 
 
 
@@ -144,22 +124,24 @@ export default function Exchange() {
                     <p> TOTAL (USDT) </p>
                   </aside>
 
-                  {
-                    orderBook_data.map((data, index) => {
-                      const { price, amount, total, degree } = data
+                  { 
+                    !asks ?
+                    <LinearProgress /> :
+                    asks.map((data, index) => {
+                      const [ price, quantity ] = data
 
                       return(
                         <aside className={styles.table_data}>
                           <p className={styles.price}
                           style={{
-                            background: `linear-gradient(to right, #F07A642F ${degree}%, transparent 0%)`,
+                            background: `linear-gradient(to right, #F07A642F ${getDecimalPart(price)}%, transparent 0%)`,
                             color: '#FF8686'
                           }}
                           > 
-                            {price}
+                            {(+price).toFixed(6)}
                           </p>
-                          <p> {amount} </p>
-                          <p> {total} </p>
+                          <p> {(+quantity).toFixed(6)} </p>
+                          <p> 5.304781 </p>
                         </aside>
                       )
                     })
@@ -174,21 +156,23 @@ export default function Exchange() {
                   </aside>
 
                   {
-                    orderBook_data.map((data, index) => {
-                      const { price, amount, total, degree } = data
+                    !asks ?
+                    <LinearProgress /> :
+                    bids.map((data, index) => {
+                      const [price, quantity] = data;
 
                       return(
                         <aside className={styles.table_data}>
                           <p className={styles.price}
                           style={{
-                            background: `linear-gradient(to right, #13A5831C ${degree}%, transparent 0%)`,
+                            background: `linear-gradient(to right, #13A5831C ${getDecimalPart(price)}%, transparent 0%)`,
                             color: '#13A583'
                           }}
                           > 
-                            {price}
+                            {(+price).toFixed(6)}
                           </p>
-                          <p> {amount} </p>
-                          <p> {total} </p>
+                          <p> {(+quantity).toFixed(6)} </p>
+                          <p> 5.304781 </p>
                         </aside>
                       )
                     })
